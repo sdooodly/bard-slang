@@ -1,15 +1,64 @@
 @import "tailwindcss";
 
+:root {
+  --earth-bg: #ede6db;
+  --earth-brown: #7c5e3c;
+  --earth-green: #a3b18a;
+  --earth-dark-green: #588157;
+  --earth-cream: #f5f3e7;
+  --earth-orange: #e07a5f;
+  --earth-shadow: rgba(124, 94, 60, 0.15);
+}
+
 body {
-  color: #e0f7fa;
-  background: #101820;
+  color: var(--earth-brown);
+  background: var(--earth-bg);
+  transition: background 0.3s;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.highlight, .text-teal, .teal {
-  color: #14b8a6;
+.bg-earth {
+  background-color: var(--earth-bg);
+}
+.text-earth-brown {
+  color: var(--earth-brown);
+}
+.text-earth-green {
+  color: var(--earth-green);
+}
+.text-earth-dark-green {
+  color: var(--earth-dark-green);
+}
+.text-earth-orange {
+  color: var(--earth-orange);
+}
+.bg-earth-green {
+  background-color: var(--earth-green);
+}
+.bg-earth-dark-green {
+  background-color: var(--earth-dark-green);
+}
+.bg-earth-cream {
+  background-color: var(--earth-cream);
+}
+.shadow-earth {
+  box-shadow: 0 4px 24px var(--earth-shadow);
 }
 
-.bg-teal {
-  background-color: #14b8a6;
-  color: #101820;
+
+.cursor-glow {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--earth-green) 0%, var(--earth-cream) 80%, transparent 100%);
+  opacity: 0.7;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: background 0.3s;
 }
