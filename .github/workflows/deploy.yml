@@ -23,9 +23,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Export static site (if using next export)
-        run: npm run export
-        if: success()
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
