@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+  color: #e0f7fa;
+  background: #101820;
+}
+
+.highlight, .text-teal, .teal {
+  color: #14b8a6;
+}
+
+.bg-teal {
+  background-color: #14b8a6;
+  color: #101820;
+}
